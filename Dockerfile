@@ -16,6 +16,7 @@ RUN docker-php-ext-configure zip --with-libzip \
 && docker-php-ext-install zip
 
 RUN docker-php-ext-enable opcache
+# test
 
 RUN apt-get update && \
 apt-get install -y libfreetype6-dev libjpeg62-turbo-dev && \
